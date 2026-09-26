@@ -1,0 +1,37 @@
+{
+  "name": "genpark-autonomous-honeypot-canary-sentinel-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Dynamic honeypot and cryptographic canary token sentinel detecting prompt extraction and triggering automated session freezes.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "agent-security",
+  "tags": [
+    "honeypot-canary",
+    "canary-tokens",
+    "prompt-leakage",
+    "session-freeze",
+    "agent-red-teaming"
+  ],
+  "inputs": {
+    "session_id": {
+      "type": "string",
+      "default": "sess_agent_9912"
+    }
+  },
+  "outputs": {
+    "sentinel_id": {
+      "type": "string"
+    },
+    "canary_compromised": {
+      "type": "boolean"
+    },
+    "integrity_status": {
+      "type": "string"
+    },
+    "automated_response": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
